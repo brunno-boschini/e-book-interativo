@@ -29,4 +29,4 @@ Este repositório contém o site interativo criado como entrega final da discipl
 - Labels em formulários
 
 ## Hospedagem
-Recomendado: GitHub Pages.
+GitHub Pages.
