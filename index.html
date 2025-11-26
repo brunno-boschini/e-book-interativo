@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio | E-book Interativo</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfólio interativo desenvolvido como projeto final da disciplina de Desenvolvimento Front-End.">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#ebook">E-book</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#video">Vídeo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Meu Portfólio Interativo</h1>
+    <p>Desenvolvido com HTML, CSS e JavaScript — Projeto Final</p>
+    <button id="scrollBtn">Explorar</button>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Meu nome é Jade e este é meu micro-site criado como atividade final da disciplina Desenvolvimento Front-End, integrando mídia, interatividade e boas práticas.
+    </p>
+    <img src="assets/foto-perfil.jpg" alt="Foto de perfil" class="perfil">
+  </section>
+
+  <!-- E-BOOK -->
+  <section id="ebook" class="section">
+    <h2>Meu E-book Interativo</h2>
+    <p>Clique para revelar capítulos interativos:</p>
+
+    <div class="capitulo">
+      <button class="toggle">Capítulo 1 – Introdução</button>
+      <div class="conteudo">Este capítulo apresenta o objetivo do e-book...</div>
+    </div>
+
+    <div class="capitulo">
+      <button class="toggle">Capítulo 2 – Conceitos</button>
+      <div class="conteudo">Nesta parte, discutimos conceitos essenciais...</div>
+    </div>
+
+    <div class="capitulo">
+      <button class="toggle">Capítulo 3 – Aplicações</button>
+      <div class="conteudo">Aqui você vê exemplos práticos de aplicação...</div>
+    </div>
+
+    <div class="capitulo">
+      <button class="toggle">Capítulo 4 – Mini Quiz</button>
+      <div class="conteudo">
+        <label>Quanto é 2 + 2?</label>
+        <input type="number" id="quiz" />
+        <button onclick="verificarQuiz()">Enviar</button>
+        <p id="resultadoQuiz"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section">
+    <h2>Galeria Interativa</h2>
+    <div class="galeria">
+      <img src="assets/img1.jpg" alt="Imagem 1" />
+      <img src="assets/img2.jpg" alt="Imagem 2" />
+      <img src="assets/img3.jpg" alt="Imagem 3" />
+    </div>
+  </section>
+
+  <!-- VÍDEO -->
+  <section id="video" class="section">
+    <h2>Vídeo Multimídia</h2>
+    <video controls width="350">
+      <source src="assets/video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <form id="form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
